@@ -1,0 +1,63 @@
+@import "hotel-search";
+@import "variables";
+@import "page-header";
+@import "welcome-picture.less";
+@import "navigation.less";
+@import "description";
+@import "advantages";
+@import "lives";
+@import "footer";
+@import "footer__list";
+@import "footer__author";
+@import "photo";
+@import "video";
+@import "review";
+@import "review-form";
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff"),
+       url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.navigation__list,
+.lives,
+.footer__list,
+.photo__list {
+  list-style: none;
+}
+
+.container {
+  width: 280px;
+}
