@@ -1,0 +1,52 @@
+.lives {
+  margin: 0;
+  padding: 0;
+  padding-left: 69px;
+  padding-right: 41px;
+  margin-bottom: 35px;
+  padding-top: 49px;
+}
+
+.lives__head {
+  font-weight: bold;
+}
+
+.lives__description {
+  font-size: 14px;
+  line-height: 21px;
+  width: 210px;
+}
+
+.lives__item {
+  position: relative;
+  margin-top: 34px;
+}
+
+.lives__item::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: -48px;
+  background-repeat: no-repeat;
+}
+
+.lives__item-house::before {
+  background-image: url("../img/icon-house.svg");
+  background-size: 37px;
+  width: 37px;
+  height: 36px;
+}
+
+.lives__item-souvenir::before {
+  background-image: url("../img/icon-gift.svg");
+  background-size: 32px;
+  width: 32px;
+  height: 38px;
+}
+
+.lives__item-food::before {
+  background-image: url("../img/icon-burger.svg");
+  background-size: 40px;
+  width: 40px;
+  height: 36px;
+}
