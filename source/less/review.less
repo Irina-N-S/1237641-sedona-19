@@ -5,8 +5,9 @@
 
 .review__head {
   text-align: center;
-  margin-top: 197px;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
+  font-weight: bold;
+  margin-top: -10px;
 }
 
 .review__description {
@@ -16,4 +17,26 @@
   text-align: center;
   width: 276px;
   margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    padding-top: 170px;
+    border: 0;
+  }
+
+  .review__head {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .review__description {
+    width: 439px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    padding-top: 217px;
+  }
 }

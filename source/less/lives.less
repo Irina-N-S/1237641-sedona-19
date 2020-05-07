@@ -1,52 +1,89 @@
 .lives {
   margin: 0;
-  padding: 0;
-  padding-left: 69px;
-  padding-right: 41px;
-  margin-bottom: 35px;
-  padding-top: 49px;
+  padding: 20px;
+  padding-bottom: 25px;
 }
 
 .lives__head {
   font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 0px;
 }
 
 .lives__description {
   font-size: 14px;
   line-height: 21px;
   width: 210px;
+  color: @gray-black;
 }
 
 .lives__item {
-  position: relative;
-  margin-top: 34px;
+  margin-top: 6px;
+  display: flex;
+  align-items: flex-start;
 }
 
-.lives__item::before {
-  content: "";
-  position: absolute;
-  top: -9px;
-  left: -48px;
-  background-repeat: no-repeat;
+.lives__icon {
+  width: 38px;
+  height: 37px;
+  fill: @blue;
+  margin-right: 11px;
 }
 
-.lives__item-house::before {
-  background-image: url("../img/icon-house.svg");
-  background-size: 37px;
-  width: 37px;
-  height: 36px;
+@media (min-width: @tablet-width) {
+  .lives {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    padding-left: 48px;
+    padding-right: 46px;
+    padding-bottom: 46px;
+  }
+
+  .lives__item {
+    flex-direction: column;
+    margin-left: 92px;
+    align-items: center;
+  }
+
+  .lives__icon {
+    transform: scale(1.4);
+  }
+
+  .lives__head {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .lives__text {
+    margin-top: 37px;
+  }
+
+  .lives__description {
+    margin-top: 23px;
+    text-align: center;
+    width: 163px;
+  }
+
+  .lives__item-souvenir {
+    order: 1;
+  }
+
+  .lives .lives__item:nth-child(1) {
+    margin-left: 0;
+  }
 }
 
-.lives__item-souvenir::before {
-  background-image: url("../img/icon-gift.svg");
-  background-size: 32px;
-  width: 32px;
-  height: 38px;
+@media (min-width: @desktop-width) {
+  .lives {
+    justify-content: space-around;
+    padding-left: 47px;
+    padding-bottom: 68px;
+  }
+
+  .lives__description {
+    width: 252px;
+  }
 }
 
-.lives__item-food::before {
-  background-image: url("../img/icon-burger.svg");
-  background-size: 40px;
-  width: 40px;
-  height: 36px;
-}
+
