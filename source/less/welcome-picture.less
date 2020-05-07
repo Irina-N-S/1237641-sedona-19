@@ -1,23 +1,66 @@
-.welcome-picture--up {
-  position: absolute;
-  top: 0;
-  margin-top: 48px;
-  margin-bottom: 44px;
-}
-
-.welcome-picture__text {
-  position: absolute;
-  top: 365px;
-  left: 20px;
+.welcome-picture {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 389px;
+  //background: url("../img/back-mobile-jpg.jpg")no-repeat bottom center / cover;
+  background-image: url("../img/back-mobile-jpg.jpg");
+  background-position: center;
 }
 
 .welcome-picture__text--inscription {
   z-index: 1;
-  top: 196px;
+  top: 282px;
+  position: absolute;
 }
 
 .welcome-picture__tringle {
   position: absolute;
   left: 0;
   bottom: 7px;
+}
+
+.welcome-picture--down {
+  margin-bottom: 35px;
+}
+
+.welcome-picture--up {
+  position: absolute;
+  top: 0;
+  margin-top: 48px;
+  margin-bottom: 44px;
+  width: 100%;
+}
+
+.welcome-picture:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 26px;
+  background: url("../img/bg-intro-triangle-mobile.svg")no-repeat center / cover;
+  z-index: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome-picture {
+    height: 518px;
+  }
+
+  .welcome-picture--up {
+    height: 290px;
+    margin-bottom: 0;
+  }
+
+  .welcome-picture__text--inscription {
+    top: 38px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome-picture--up {
+    height: 301px;
+  }
 }

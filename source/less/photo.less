@@ -1,7 +1,3 @@
-.photo {
-  margin-top: 179px;
-}
-
 .photo__description {
   display: flex;
   flex-direction: column;
@@ -12,6 +8,8 @@
 
 .photo__head {
   font-weight: bold;
+  margin-top: -9px;
+  margin-bottom: 23px;
 }
 
 .photo__text {
@@ -24,20 +22,21 @@
 
 .photo__list {
   padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .photo__item {
-  margin-top: 21px;
-  padding-bottom: 14px;
+  margin-top: 20px;
+  padding: 0 20px;
+  padding-bottom: 18px;
   border-bottom: 1px solid gray;
 }
 
+.photo__img {
+  width: 100%;
+}
+
 .photo__name,
-.photo__like {
+.photo__like-number {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
@@ -48,7 +47,8 @@
   line-height: 24px;
   color: @gray-black;
   margin: 0;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+  text-transform: none;
 }
 
 .photo__name {
@@ -57,17 +57,120 @@
 }
 
 .photo__like {
-  padding-left: 34px;
-  position: relative;
+  margin-right: 10px;
 }
 
-.photo__like::before {
-  content: "";
-  background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;
-  opacity: 0.3;
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  left: 0;
+@media (min-width: @tablet-width) {
+  .photo {
+    padding-top: 168px;
+  }
+
+  .photo__head--size {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .photo__text--width {
+    width: 428px;
+  }
+
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+
+  .photo__item {
+    padding: 0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    width: 324px;
+    border: 0;
+  }
+
+  .photo__description {
+    border: 0;
+  }
+
+  .photo__list .photo__item:first-child {
+    width: 100%;
+    margin-top: 23px;
+  }
+
+  .photo__wrap {
+    background-color: @white-three;
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 20px;
+    padding-top: 14px;
+    margin-top: -13px;
+    margin-bottom: -47px;
+  }
+
+  .photo__like {
+    padding-top: 20px;
+  }
+
+  .photo__item:nth-child(2n) .photo__wrap {
+    padding-right: 29px;
+  }
+
+  .photo__item:nth-child(2n+3) .photo__wrap {
+    padding-right: 36px;
+    padding-bottom: 10px;
+  }
+
+  .photo__item:last-child .photo__wrap {
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    padding-top: 218px;
+  }
+
+  .photo__item {
+    position: relative;
+  }
+
+  .photo__wrap {
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    background-color: rgba(0, 1, 1, 0.2);
+    box-sizing: border-box;
+  }
+
+  .photo__list {
+    padding: 0;
+  }
+
+  .photo__autor,
+  .photo__name,
+  .photo__like-number {
+    color: @white;
+  }
+
+  .photo__liks {
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+  }
+
+  .photo__like {
+    margin-right: 10px;
+    fill: #ffffff;
+    padding: 0;
+  }
+
+  .photo__item {
+    margin: 0;
+    margin: 0;
+    width: 400px;
+    margin-top: -13px;
+  }
 }
