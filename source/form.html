@@ -4,171 +4,184 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
-  <style type="text/css">
-    #positive {
-    }
-  </style>
 </head>
 <body>
   <h1 class="visually-hidden">Седона</h1>
-  <header class="page-header">
-    <nav class="navigation navigation--down">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="" class="navigation__link">Главная</a>
-          <button class="navigation__button navigation__button-close"></button>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">фото и видео</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Форма отзыва</a>
-        </li>
-        <li class="navigation__item navigation__item--shadow">
-          <a class="navigation__link" href="#">HTML academy</a>
-        </li>
-        <li class="navigation__item">
-          <img class="navigation__logo" src="img/logotyle-mobile-svg.svg" height="83px" width="102px" alt="Логотип Седона">
-          <button class="navigation__button navigation__button-menu"></button>
-        </li>
-      </ul>
-    </nav>
-    <div class="welcome-picture welcome-picture--up">
-      <img class="welcome-picture__text welcome-picture__text--inscription" src="img/sedona.png" height="40px" width="230px" alt="Надпись Седона">
-    </div>
-  </header>
-  <main>
-    <div class="review">
-      <p class="review__head">
-        Оставьте свой отзыв
-      </p>
-      <p class="review__description">
-        Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-      </p>
-    </div>
-    <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="review-form__item review-form__item--shift">
-        <legend class="review-form__head review-form__head-position">Представьтесь:</legend>
-        <label class="review-form__field-description review-form__field-description--shift">
-          <span class="review-form__text">ИМЯ*:</span>
-          <input class="review-form__field" type="text" name="name" placeholder="Петр">
-        </label>
-        <label class="review-form__field-description review-form__field-description--shift">
-          <span class="review-form__text">ФАМИЛИЯ*:</span>
-          <input class="review-form__field" type="text" name="surname" placeholder="Иванов">
-        </label>
-        <label class="review-form__field-description review-form__field-description--shift">
-          <span class="review-form__text">Отчество:</span>
-          <input class="review-form__field" type="text" name="patronymic" placeholder="Александрович">
-        </label>
-      </fieldset>
-      <fieldset class="review-form__item review-form__item--position">
-        <legend class="review-form__head">Контактная информация:</legend>
-        <label class="review-form__field-description review-form__field-description--position review-form__field-description--phon">
-          <span class="review-form__lable">Контактный телефон*:</span>
-          <input class="review-form__field review-form__field--phon" type="text" name="phon" placeholder="Введите телефон">
-        </label>
-        <label class="review-form__field-description review-form__field-description--position review-form__field-description--mail">
-          <span class="review-form__lable">Электронная почта*:</span>
-          <input class="review-form__field review-form__field--mail" type="email" name="email" placeholder="Введите e-mail">
-        </label>
-      </fieldset>
-      <fieldset class="review-form__item review-form__item--first">
-        <legend class="review-form__head review-form__head--bottom">ВАше Общее впечатление:</legend>
-        <label class="review-form__field-description review-form__field-description--move">
-          <input class="visually-hidden" type="radio" name="impression" value="positive" checked>
-          <span class="review-form__checkbox-indicator"></span>
-          <span class="review-form__iner">Скорее положительное</span>
-        </label>
-        <label class="review-form__field-description review-form__field-description--move">
-          <input class="review-form__field visually-hidden" type="radio" name="impression" value="negative">
-          <span class="review-form__checkbox-indicator"></span>
-          <span class="review-form__iner">Скорее отрицательное</span>
-        </label>
-        <label class="review-form__field-description review-form__field-description--move">
-          <input class="review-form__field visually-hidden" type="radio" name="impression" value="no-answer">
-          <span class="review-form__checkbox-indicator"></span>
-          <span class="review-form__iner">Затрудняюсь ответить</span>
-        </label>
-      </fieldset>
-      <fieldset class="review-form__item review-form__item--position review-form__item--up">
-        <legend class="review-form__head review-form__head--bottom review-form__head--width">посещенные достопримечательности:</legend>
-        <label class="review-form__field-description review-form__field-description--move-big">
-          <input class="visually-hidden" type="checkbox" name="bridge" checked>
-          <span class="review-form__checkbox-indicator"></span>
-          <span class="review-form__iner">Мост Дьявола</span>
-        </label>
-        <label class="review-form__field-description review-form__field-description--move-big">
-          <input class="visually-hidden" type="checkbox" name="mountain" checked>
-          <span class="review-form__checkbox-indicator"></span>
-          <span class="review-form__iner">Гора-Колокол</span>
-        </label>
-        <label class="review-form__field-description review-form__field-description--move-big">
-          <input class="visually-hidden" type="checkbox" name="park" checked>
-          <span class="review-form__checkbox-indicator"></span>
-          <span class="review-form__iner">Слайд-парк</span>
-        </label>
-        <label class="review-form__field-description review-form__field-description--move-big">
-          <input class="visually-hidden" type="checkbox" name="rocks">
-          <span class="review-form__checkbox-indicator"></span>
-          <span class="review-form__iner">Красные скалы</span>
-        </label>
-      </fieldset>
-      <fieldset class="review-form__item review-form__item--border-non">
-        <legend class="review-form__head">Опишите свои эмоции:</legend>
-        <label class="review-form__field-description">
-          <textarea class="review-form__field review-form__field--textarea" name="review" placeholder="Опишите подробно все свои восторги "></textarea>
-        </label>
-      </fieldset>
-      <div class="review-form__wrap">
-        <button class="review-form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+  <div class="conteiner">
+    <header class="page-header">
+      <nav class="navigation navigation--down">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Главная</a>
+            <button class="navigation__button navigation__button-close"></button>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">фото и видео</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Форма отзыва</a>
+          </li>
+          <li class="navigation__item navigation__item--shadow">
+            <a class="navigation__link" href="#">HTML academy</a>
+          </li>
+          <li class="navigation__item">
+            <img class="navigation__logo" src="img/logotyle-mobile-svg.svg" height="83px" width="102px" alt="Логотип Седона">
+            <button class="navigation__button navigation__button-menu"></button>
+          </li>
+        </ul>
+      </nav>
+      <div class="welcome-picture welcome-picture--up">
+        <img class="welcome-picture__text welcome-picture__text--inscription" src="img/sedona.svg" height="214px" width="281px" alt="Надпись Седона">
       </div>
-    </form>
-  </main>
-  <footer class="footer">
-    <div class="wrap">
-      <div class="footer__item">
-        <h2 class="footer__header2">
-          #visitSEDONA
-        </h2>
+    </header>
+    <main>
+      <div class="review">
+        <p class="review__head">
+          Оставьте свой отзыв
+        </p>
+        <p class="review__description">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </p>
       </div>
-      <div class="footer__item">
-        <div class="footer__social">
-          <a class="footer__social-link" href="#">
-            <svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-                <g id="W6EeEF_1_">
-                  <g>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
-                  </g>
-                </g>
-              </svg>
-          </a>
-          <a class="footer__social-link" href="#">
-            <svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-                <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
-              </svg>
-          </a>
-          <a class="footer__social-link" href="#">
-            <svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-                <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
-              </svg>
-          </a>
-        </div>
-      </div>
-      <div class="footer__item">
-        <div class="footer__info">
-          <p class="footer__description">
-            Разработано
+      <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="review-form__item review-form__item--shift">
+          <legend class="review-form__head review-form__head-position">Представьтесь:</legend>
+          <label class="review-form__field-description review-form__field-description--shift">
+            <span class="review-form__text">ИМЯ*:</span>
+            <input class="review-form__field" type="text" name="name" placeholder="Петр">
+          </label>
+          <label class="review-form__field-description review-form__field-description--shift">
+            <span class="review-form__text">ФАМИЛИЯ*:</span>
+            <input class="review-form__field" type="text" name="surname" placeholder="Иванов">
+          </label>
+          <label class="review-form__field-description review-form__field-description--shift">
+            <span class="review-form__text">Отчество:</span>
+            <input class="review-form__field" type="text" name="patronymic" placeholder="Александрович">
+          </label>
+        </fieldset>
+        <fieldset class="review-form__item review-form__item--position">
+          <div class="review-form__wrap-legend">
+            <legend class="review-form__head review-form__head--position">Контактная информация:</legend>
+          </div>
+          <div class="review-form__wrap-label">
+            <label class="review-form__field-description review-form__field-description--position review-form__field-description--phon">
+              <span class="review-form__lable review-form__lable--flat"><span class="review-form__lable--none">Контактный </span>телефон*:</span>
+              <input class="review-form__field review-form__field--phon" type="text" name="phon" placeholder="Введите телефон">
+            </label>
+            <label class="review-form__field-description review-form__field-description--position review-form__field-description--mail">
+              <span class="review-form__lable review-form__lable--flat review-form__lable--width">Электронная почта*:</span>
+              <input class="review-form__field review-form__field--mail" type="email" name="email" placeholder="Введите e-mail">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="review-form__item review-form__item--first">
+          <legend class="review-form__head review-form__head--bottom">ВАше Общее впечатление:</legend>
+          <label class="review-form__field-description review-form__field-description--move">
+            <input class="visually-hidden" type="radio" name="impression" value="positive" checked>
+            <span class="review-form__checkbox-indicator"></span>
+            <span class="review-form__iner">Скорее положительное</span>
+          </label>
+          <label class="review-form__field-description review-form__field-description--move">
+            <input class="review-form__field visually-hidden" type="radio" name="impression" value="negative">
+            <span class="review-form__checkbox-indicator"></span>
+            <span class="review-form__iner">Скорее отрицательное</span>
+          </label>
+          <label class="review-form__field-description review-form__field-description--move">
+            <input class="review-form__field visually-hidden" type="radio" name="impression" value="no-answer">
+            <span class="review-form__checkbox-indicator"></span>
+            <span class="review-form__iner">Затрудняюсь ответить</span>
+          </label>
+        </fieldset>
+        <fieldset class="review-form__item review-form__item--position review-form__item--up">
+          <div class="review-form__wrap-legend review-form__wrap-legend--bottom">
+            <legend class="review-form__head review-form__head--bottom review-form__head--width review-form__head--position">посещенные достопримечательности:</legend>
+          </div>
+          <div class="review-form__wrap-label">
+            <label class="review-form__field-description review-form__field-description--move-big">
+              <input class="visually-hidden" type="checkbox" name="bridge" checked>
+              <span class="review-form__checkbox-indicator"></span>
+              <span class="review-form__iner">Мост Дьявола</span>
+            </label>
+            <label class="review-form__field-description review-form__field-description--move-big">
+              <input class="visually-hidden" type="checkbox" name="mountain" checked>
+              <span class="review-form__checkbox-indicator"></span>
+              <span class="review-form__iner">Гора-Колокол</span>
+            </label>
+            <label class="review-form__field-description review-form__field-description--move-big">
+              <input class="visually-hidden" type="checkbox" name="park" checked>
+              <span class="review-form__checkbox-indicator"></span>
+              <span class="review-form__iner">Слайд-парк</span>
+            </label>
+            <label class="review-form__field-description review-form__field-description--move-big">
+              <input class="visually-hidden" type="checkbox" name="rocks">
+              <span class="review-form__checkbox-indicator"></span>
+              <span class="review-form__iner">Красные скалы</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="review-form__item review-form__item--border-non">
+          <div class="review-form__wrap-legend review-form__wrap-legend--position">
+            <legend class="review-form__head review-form__head--position">Опишите свои эмоции:</legend>
+          </div>
+          <label class="review-form__field-description">
+            <textarea class="review-form__field review-form__field--textarea" name="review" placeholder="Опишите подробно все свои восторги "></textarea>
+          </label>
+        </fieldset>
+        <div class="review-form__wrap">
+          <button class="review-form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <p class="review-form__info">
+            * — обязательные поля
           </p>
-          <a class="footer__link-academy">
-            <svg class="footer__img-academy" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
-              <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
-            </svg>
-          </a>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__item">
+          <h2 class="footer__header2">
+            #visitSEDONA
+          </h2>
+        </div>
+        <div class="footer__item">
+          <div class="footer__social">
+            <a class="footer__social-link" href="#">
+              <svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                  <g id="W6EeEF_1_">
+                    <g>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+                    </g>
+                  </g>
+                </svg>
+            </a>
+            <a class="footer__social-link" href="#">
+              <svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                  <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+                </svg>
+            </a>
+            <a class="footer__social-link" href="#">
+              <svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                  <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+                </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__info">
+            <p class="footer__description">
+              Разработано
+            </p>
+            <a class="footer__link-academy">
+              <svg class="footer__img-academy" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+                <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>

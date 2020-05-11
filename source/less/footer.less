@@ -41,6 +41,28 @@
   margin-bottom: 15px;
 }
 
+.footer__social-link:hover,
+.footer__social-link:focus {
+  background-color: @blue-hover;
+}
+
+.footer__social-link:active {
+  background-color: @blue-down;
+}
+
+.footer__social-link:active .footer__social-img{
+  opacity: 0.3;
+}
+
+.footer__img-academy:hover,
+.footer__img-academy:focus {
+  fill: @blue;
+}
+
+.footer__img-academy:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .wrap {
     display: flex;

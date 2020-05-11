@@ -13,26 +13,23 @@
 @import "review-form";
 @import "map";
 
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2") format("woff2"),
-       url("../fonts/ptsansbold.woff2") format("woff2"),
-       url("../fonts/ptsans.woff") format("woff"),
-       url("../fonts/ptsans.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+
 
 body {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   width: 320px;
-  //margin: 0 auto;
+  margin: 0 auto;
   padding: 0;
   text-transform: uppercase;
   color: black;
+  background-color: @white-three;
+  @font-reg();
+}
+
+.conteiner {
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+  background-color: @white;
 }
 
 a {
@@ -70,8 +67,6 @@ img {
 @media (min-width: @desktop-width) {
   body {
     width: @desktop-width;
-    margin: 0 auto;
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
   }
 }
 
