@@ -2,29 +2,39 @@
   margin: auto;
   text-align: center;
   width: 280px;
-}
 
-.hotel-search__header2 {
-  font-size: 21px;
-  margin-top: 29px;
-}
+  .hotel-search__header2 {
+    font-size: 21px;
+    margin-top: 29px;
+  }
 
-.hotel-search__description {
-  font-size: 14px;
-  line-height: 24px;
-}
+  .hotel-search__description {
+    font-size: 14px;
+    line-height: 24px;
+  }
 
-.hotel-search__button {
-  width: 100%;
-  background-color: @blue;
-  display: block;
-  font-weight: bold;
-  color: @white;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-top: 37px;
-  margin-bottom: 49px;
-  font-size: 21px;
+  .hotel-search__button {
+    width: 100%;
+    background-color: @blue;
+    display: block;
+    font-weight: bold;
+    color: @white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 37px;
+    margin-bottom: 49px;
+    font-size: 21px;
+
+    &:hover,
+    &:focus {
+      background-color: @blue-hover;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: @blue-down;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
