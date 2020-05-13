@@ -4,15 +4,21 @@
   align-items: center;
   justify-content: center;
   height: 389px;
-  //background: url("../img/back-mobile-jpg.jpg")no-repeat bottom center / cover;
-  background-image: url("../img/back-mobile-jpg.jpg");
+  background: url("../img/back-mobile-jpg.jpg")no-repeat bottom center / cover;
+  //background-image: url("../img/back-mobile-jpg.jpg");
   background-position: center;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .welcome-picture__text--inscription {
   z-index: 1;
-  top: 197px;
   position: absolute;
+  height: 39px;
+  width: 229px;
+  top: 283px;
+  left: 45px;
 }
 
 .welcome-picture__tringle {
@@ -47,20 +53,56 @@
 @media (min-width: @tablet-width) {
   .welcome-picture {
     height: 518px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
+
 
   .welcome-picture--up {
     height: 290px;
     margin-bottom: 0;
+    margin-top: 55px;
+  }
+
+  .welcome-picture__text {
+    width: 460px;
+    height: auto;
+    margin-top: -13px;
   }
 
   .welcome-picture__text--inscription {
-    top: 38px;
+    top: 109px;
+    left: 154px;
+  }
+
+  .welcome-picture:before {
+    background-image: url("../img/intro-triangle-svg.png");
+    height: 57px;
+    bottom: -1px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .welcome-picture {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+
+    .welcome-picture__text--inscription {
+      left: 369px;
+    }
+  }
+
   .welcome-picture--up {
     height: 301px;
+  }
+
+  .welcome-picture__text {
+    top: 118px;
   }
 }

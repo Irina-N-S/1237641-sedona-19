@@ -28,13 +28,17 @@
             <a class="navigation__link" href="#">HTML academy</a>
           </li>
           <li class="navigation__item">
-            <img class="navigation__logo" src="img/logotyle-mobile-svg.svg" height="83px" width="102px" alt="Логотип Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="navigation__logo" src="img/logotyle-mobile-svg.svg" height="83px" width="102px" alt="Логотип Седона">
+            </picture>
             <button class="navigation__button navigation__button-menu"></button>
           </li>
         </ul>
       </nav>
       <div class="welcome-picture">
-        <img class="welcome-picture__text" src="img/text-index-svg.png" height="214px" width="281px" alt="Добро пожаловать в Седону">
+        <img class="welcome-picture__text" src="img/text-sedona-index.svg" height="214px" width="281px" alt="Добро пожаловать в Седону">
       </div>
     </header>
       <main>
@@ -61,7 +65,11 @@
             </p>
           </div>
           <div class="advanteges__photo-content">
-            <img class="advanteges__photo" src="img/photo-city-1-x.png" height="260px" width="320px" alt="Фотография города">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg">
+              <img class="advanteges__photo" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg" height="260px" width="320px" alt="Фотография города">
+            </picture>
           </div>
         </div>
         <ul class="lives">
@@ -141,7 +149,11 @@
             </p>
           </div>
           <div class="advanteges__photo-content">
-            <img class="advanteges__photo" src="img/photo-bridge-1-x.png" height="260px" width="320px" alt="Фотография города">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg">
+              <img class="advanteges__photo" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" height="260px" width="320px" alt="Фотография города">
+            </picture>
           </div>
         </div>
         <div class="wrapper">
@@ -193,7 +205,11 @@
           </a>
         </div>
         <div class="map">
-          <img class="map__img" src="img/map-mobile-jpg.jpg" height="350px" width="320px" alt="Карта">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg">
+            <img class="map__img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg" height="350px" width="320px" alt="Карта">
+          </picture>
           <img class="map__marker" src="img/map-marker-svg.png">
         </div>
       </main>
