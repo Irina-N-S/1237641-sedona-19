@@ -226,9 +226,15 @@
 .review-form__button:focus {
   background-color: @blue-hover;
 }
+
 .review-form__button:active {
   background-color: @blue-down;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.review-form__button:disabled {
+  background-color: @gray-hover;
+  color: @white;
 }
 
 .review-form__field-description textarea[placeholder] {

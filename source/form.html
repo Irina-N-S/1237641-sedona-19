@@ -28,7 +28,11 @@
             <a class="navigation__link" href="#">HTML academy</a>
           </li>
           <li class="navigation__item">
-            <img class="navigation__logo" src="img/logotyle-mobile-svg.svg" height="83px" width="102px" alt="Логотип Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="navigation__logo" src="img/logotyle-mobile-svg.svg" height="83px" width="102px" alt="Логотип Седона">
+            </picture>
             <button class="navigation__button navigation__button-menu"></button>
           </li>
         </ul>

@@ -34,25 +34,46 @@
       color: rgba(255, 255, 255, 0.3);
       background-color: @blue-down;
     }
+
+    &:disabled {
+      background-color: @gray-hover;
+      color: @white;
+    }
   }
 }
 
 @media (min-width: @tablet-width) {
   .hotel-search {
     width: 458px;
+
+    .hotel-search__header2 {
+      font-size: 30px;
+      margin-top: 55px;
+    }
+
+    .hotel-search__button {
+      margin-bottom: 59px;
+    }
   }
 
-  .hotel-search__header2 {
-    font-size: 30px;
-    margin-top: 55px;
-  }
 
   .hotel-search__description {
     margin-top: 31px;
     margin-bottom: 42px;
+    line-height: 26px;
+    width: 434px;
   }
+}
 
-  .hotel-search__button {
-    margin-bottom: 59px;
+@media (min-width: @desktop-width) {
+  .hotel-search {
+
+    .hotel-search__description {
+      margin-bottom: 47px;
+    }
+
+    .hotel-search__button {
+      margin-bottom: 66px;
+    }
   }
 }
