@@ -1,0 +1,77 @@
+.logo {
+  width: 100%;
+  background-color: white;
+  height: 55px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo--top {
+  position: absolute;
+  bottom: -54px;
+  z-index: 1;
+}
+
+.logo__menu {
+  background-color: @white;
+  border: none;
+  width: 23px;
+  height: 21px;
+  margin-right: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 3px;
+    background-color: @blue;
+    top: 2px;
+    right: 0;
+    box-shadow: 0 17px 0 0 @blue, 0 8.5px 0 0 @blue;
+  }
+}
+
+//.logo__menu--top::after {
+//  top: 17px;
+//}
+
+.logo__img {
+  position: absolute;
+  z-index: 1;
+  left: 35%;
+  height: 83px;
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    position: absolute;
+
+    .logo__img {
+      left: 43.3%;
+      top: -58px;
+    }
+
+    .logo__img--top {
+      top: 0;
+    }
+  }
+
+  .logo--top {
+    position: static;
+  }
+
+  .logo__meny::after {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo .logo__img {
+    height: 96px;
+    width: 188px;
+    left: 42.1%;
+  }
+}

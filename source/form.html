@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress HtmlUnknownTag, XmlUnusedNamespaceDeclaration -->
 <html lang="ru">
 <head>
   <meta charset="utf-8">
@@ -15,11 +16,11 @@
       <nav class="navigation navigation--down">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="" class="navigation__link">Главная</a>
+            <a href="index.html" class="navigation__link">Главная</a>
             <button class="navigation__button navigation__button-close"></button>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">фото и видео</a>
+            <a class="navigation__link" href="photo.html">фото и видео</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Форма отзыва</a>
@@ -27,16 +28,16 @@
           <li class="navigation__item navigation__item--shadow">
             <a class="navigation__link" href="#">HTML academy</a>
           </li>
-          <li class="navigation__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="navigation__logo" src="img/logotyle-mobile-svg.svg" height="83px" width="102px" alt="Логотип Седона">
-            </picture>
-            <button class="navigation__button navigation__button-menu"></button>
-          </li>
         </ul>
       </nav>
+      <div class="logo logo--top">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="logo__img logo__img--top" src="img/logotyle-mobile-svg.svg" height="83px" width="102px" alt="Логотип Седона">
+        </picture>
+        <button class="logo__menu logo__menu--top"></button>
+      </div>
       <div class="welcome-picture welcome-picture--up">
         <img class="welcome-picture__text welcome-picture__text--inscription" src="img/sedona.svg" height="214px" width="281px" alt="Надпись Седона">
       </div>
@@ -55,11 +56,11 @@
           <legend class="review-form__head review-form__head-position">Представьтесь:</legend>
           <label class="review-form__field-description review-form__field-description--shift">
             <span class="review-form__text">ИМЯ*:</span>
-            <input class="review-form__field" type="text" name="name" placeholder="Петр">
+            <input class="review-form__field" type="text" name="name" placeholder="Петр" required>
           </label>
           <label class="review-form__field-description review-form__field-description--shift">
             <span class="review-form__text">ФАМИЛИЯ*:</span>
-            <input class="review-form__field" type="text" name="surname" placeholder="Иванов">
+            <input class="review-form__field" type="text" name="surname" placeholder="Иванов" required>
           </label>
           <label class="review-form__field-description review-form__field-description--shift">
             <span class="review-form__text">Отчество:</span>
@@ -73,11 +74,11 @@
           <div class="review-form__wrap-label">
             <label class="review-form__field-description review-form__field-description--position review-form__field-description--phon">
               <span class="review-form__lable review-form__lable--flat"><span class="review-form__lable--none">Контактный </span>телефон*:</span>
-              <input class="review-form__field review-form__field--phon" type="text" name="phon" placeholder="Введите телефон">
+              <input class="review-form__field review-form__field--phon" type="tel" name="phon" placeholder="Введите телефон" required>
             </label>
             <label class="review-form__field-description review-form__field-description--position review-form__field-description--mail">
               <span class="review-form__lable review-form__lable--flat review-form__lable--width">Электронная почта*:</span>
-              <input class="review-form__field review-form__field--mail" type="email" name="email" placeholder="Введите e-mail">
+              <input class="review-form__field review-form__field--mail" type="email" name="email" placeholder="Введите e-mail" required>
             </label>
           </div>
         </fieldset>
@@ -103,7 +104,7 @@
           <div class="review-form__wrap-legend review-form__wrap-legend--bottom">
             <legend class="review-form__head review-form__head--bottom review-form__head--width review-form__head--position">посещенные достопримечательности:</legend>
           </div>
-          <div class="review-form__wrap-label">
+          <div class="review-form__wrap-label review-form__wrap-label--position">
             <label class="review-form__field-description review-form__field-description--move-big">
               <input class="visually-hidden" type="checkbox" name="bridge" checked>
               <span class="review-form__checkbox-indicator"></span>
@@ -130,7 +131,7 @@
           <div class="review-form__wrap-legend review-form__wrap-legend--position">
             <legend class="review-form__head review-form__head--position">Опишите свои эмоции:</legend>
           </div>
-          <label class="review-form__field-description">
+          <label class="review-form__field-description review-form__field-description--up">
             <textarea class="review-form__field review-form__field--textarea" name="review" placeholder="Опишите подробно все свои восторги "></textarea>
           </label>
         </fieldset>
@@ -152,7 +153,7 @@
         <div class="footer__item">
           <div class="footer__social">
             <a class="footer__social-link" href="#">
-              <svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+              <svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                   <g id="W6EeEF_1_">
                     <g>
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
@@ -161,12 +162,12 @@
                 </svg>
             </a>
             <a class="footer__social-link" href="#">
-              <svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+              <svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
                   <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
                 </svg>
             </a>
             <a class="footer__social-link" href="#">
-              <svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+              <svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
                   <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
                 </svg>
             </a>
@@ -186,6 +187,32 @@
         </div>
       </div>
     </footer>
+    <div class="error">
+      <div class="error__wrap">
+        <p class="error__header">
+          ЧТО-ТО ПОШЛО НЕ ТАК!
+        </p>
+        <p class="error__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="error__button">OK</button>
+      </div>
+    </div>
+    <div class="review-sent">
+      <div class="review-sent__wrap">
+        <p class="review-sent__header">
+          Ваш отзыв отправлен!
+        </p>
+        <p class="review-sent__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+          В ближайшее время мы опубликуем его на сайте.
+        </p>
+      </div>
+      <div class="review-sent__button-wrap">
+        <button class="review-sent__button">ЗАкРЫТЬ ОКНО</button>
+      </div>
+    </div>
   </div>
+  <script type="text/javascript" src="js/form.js"></script>
 </body>
 </html>
