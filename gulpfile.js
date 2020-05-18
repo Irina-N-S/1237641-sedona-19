@@ -21,6 +21,11 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("svg4everybody" , function () {
+  return gulp.src("node_modules/svg4everybody/dist/svg4everybody.js")
+    .pipe(gulp.dest("source/js"));
+})
+
 gulp.task("server", function () {
   server.init({
     server: "source/",
@@ -34,4 +39,4 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("css", "svg4everybody", "server"));
