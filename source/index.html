@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <!--suppress HtmlUnknownTarget -->
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+  <div style="display: none">
+    <!--suppress HtmlUnknownTag -->
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <h1 class="visually-hidden">Седона</h1>
   <div class="conteiner">
     <header class="page-header">
@@ -81,7 +86,7 @@
           <li class="lives__item lives__item-house">
             <div class="lives__icon">
               <svg class="lives__icon" width="74.695px" height="72.346px">
-                <use xlink:href="img/sprite.svg#house"></use>
+                <use xlink:href="img/sprite.svg#icon-house"></use>
               </svg>
             </div>
             <div class="lives__text">
@@ -96,7 +101,7 @@
           <li class="lives__item lives__item-souvenir">
             <div class="lives__icon">
               <svg class="lives__icon" width="63px" height="75.084px">
-                <use xlink:href="img/sprite.svg#burger"></use>
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
               </svg>
             </div>
             <div class="lives__text">
@@ -111,7 +116,7 @@
           <li class="lives__item lives__item-food">
             <div class="lives__icon">
               <svg class="lives__icon" width="76.166px" height="68.959px">
-                <use xlink:href="img/sprite.svg#gift"></use>
+                <use xlink:href="img/sprite.svg#icon-gift"></use>
               </svg>
             </div>
             <div class="lives__text">
@@ -218,17 +223,17 @@
             <div class="footer__social">
               <a class="footer__social-link" href="#">
                 <svg class="footer__social-img" width="17.5px" height="14.663px">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
               <a class="footer__social-link" href="#">
                 <svg class="footer__social-img" width="8.672px" height="18.944px">
-                  <use xlink:href="img/sprite.svg#facebook"></use>
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
               <a class="footer__social-link" href="#">
                 <svg class="footer__social-img" width="19.979px" height="14.015px">
-                  <use xlink:href="img/sprite.svg#youtube"></use>
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
             </div>
@@ -240,7 +245,7 @@
               </p>
               <a class="footer__link-academy">
                 <svg class="footer__img-academy" width="26.943" height="34.09">
-                  <use xlink:href="img/sprite.svg#htmlacademy"></use>
+                  <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
                 </svg>
               </a>
             </div>
