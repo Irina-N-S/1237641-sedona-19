@@ -64,6 +64,11 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("svg4everybody" , function () {
+  return gulp.src("node_modules/svg4everybody/dist/svg4everybody.js")
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
@@ -100,5 +105,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "svg4everybody", "html"));
 gulp.task("start", gulp.series("build", "server"));

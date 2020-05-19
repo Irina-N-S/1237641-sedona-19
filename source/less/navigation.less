@@ -1,13 +1,9 @@
 .navigation--down {
-  margin-bottom: 187px;
+  margin-bottom: 260px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 125px;
   }
-
-  //@media (min-width: @desktop-width) {
-  //  margin-bottom: 125px;
-  //}
 }
 
 .navigation__list {
@@ -19,16 +15,17 @@
   @media (min-width: @tablet-width) {
     display: flex;
 
-  .navigation__item:nth-child(1) {
-    order: -3;
-  }
+    .navigation__item:nth-child(1) {
+      order: -3;
+    }
 
-  .navigation__item:nth-child(2) {
-    margin-right: 156px;
-    order: -2;
+    .navigation__item:nth-child(2) {
+      margin-right: 156px;
+      order: -2;
 
-    @media (min-width: @desktop-width) {
-      margin-right: 243px;
+      @media (min-width: @desktop-width) {
+        margin-right: 243px;
+      }
     }
   }
 }
@@ -57,19 +54,87 @@
         background-color: @white;
       }
     }
-}
+  }
 
-.navigation__link {
-  color: @white;
-  display: block;
-  padding-top: 7px;
+  .navigation__link {
+    color: @white;
+    display: block;
+    padding-top: 7px;
 
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+
+      @media (min-width: @tablet-width) {
+        color: #766357;
+      }
+    }
 
     @media (min-width: @tablet-width) {
-      color: #766357;
+      background-color: @white;
+      color: @black;
+      font-size: 14px;
+      box-shadow: none;
+      //width: 153px;
+
+      &:hover,
+      &:focus {
+        color: @blue;
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
     }
+
+    //@media (min-width: @desktop-width) {
+    //  width: 239px;
+    //}
+  }
+
+  .navigation__button {
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    top: -33px;
+    right: -129px;
+    width: 30px;
+    height: 30px;
+    background-color: @blue;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  .navigation__button-close::before,
+  .navigation__button-close::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: @white;
+    top: 11px;
+    right: -1px;
+  }
+
+  .navigation__button-close::before {
+    transform: rotate(45deg);
+  }
+
+  .navigation__button-close::after {
+    transform: rotate(-45deg);
+  }
+
+  .navigation__button-menu::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 3px;
+    background-color: @blue;
+    top: 220px;
+    right: 0;
+    box-shadow: 0 17px 0 0 @blue, 0 8.5px 0 0 @blue;
   }
 
   @media (min-width: @tablet-width) {
@@ -77,76 +142,8 @@
     color: @black;
     font-size: 14px;
     box-shadow: none;
-    //width: 153px;
-
-    &:hover,
-    &:focus {
-      color: @blue;
-    }
-
-    &:active {
-      color: rgba(0, 0, 0, 0.3);
-    }
+    width: 153px;
   }
-
-  //@media (min-width: @desktop-width) {
-  //  width: 239px;
-  //}
-}
-
-.navigation__button {
-  border: 0;
-  cursor: pointer;
-  padding: 0;
-  position: relative;
-  top: -33px;
-  right: -129px;
-  width: 30px;
-  height: 30px;
-  background-color: @blue;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.navigation__button-close::before,
-.navigation__button-close::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  background-color: @white;
-  top: 11px;
-  right: -1px;
-}
-
-.navigation__button-close::before {
-  transform: rotate(45deg);
-}
-
-.navigation__button-close::after {
-  transform: rotate(-45deg);
-}
-
-.navigation__button-menu::before {
-  content: "";
-  position: absolute;
-  width: 23px;
-  height: 3px;
-  background-color: @blue;
-  top: 220px;
-  right: 0;
-  box-shadow: 0 17px 0 0 @blue, 0 8.5px 0 0 @blue;
-}
-
-@media (min-width: @tablet-width) {
-  background-color: @white;
-  color: @black;
-  font-size: 14px;
-  box-shadow: none;
-  width: 153px;
-}
 
   @media (min-width: @desktop-width) {
     width: 20%;
@@ -154,7 +151,7 @@
 }
 
 .navigation__item--shadow {
-box-shadow: inset 0 -3px 3px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 -3px 3px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: @tablet-width) {
     box-shadow: none;
@@ -162,7 +159,7 @@ box-shadow: inset 0 -3px 3px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255
 }
 
 .navigation__item:active {
-background-color: @blue-down;
+  background-color: @blue-down;
 }
 
 @media (min-width: @desktop-width) {
@@ -170,10 +167,8 @@ background-color: @blue-down;
     width: 244px;
   }
 }
-}
 
 @media (max-width: @mobile-width-only) {
-
   .navigation--closed {
     display: none;
   }
