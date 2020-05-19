@@ -16,6 +16,25 @@
 @import "review-sent";
 @import "logo";
 
+@font-face {
+  font-family: 'PTSans-Regular';
+  src: url('../fonts/ptsans.woff') format('woff'),
+  url('../fonts/ptsans.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans-Bold';
+  src: url('../fonts/ptsansbold.woff') format('woff'),
+  url('../fonts/ptsansbold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@fontReg: "PTSans-Regular", "Arial", sans-serif;
+@fontBold: "PTSans-Bold", "Arial", sans-serif;
+
 body {
   font-size: 18px;
   line-height: 26px;
@@ -25,8 +44,20 @@ body {
   text-transform: uppercase;
   color: black;
   background-color: @white-three;
-  @font-reg();
+  font-family: @fontReg;
 }
+//
+//body {
+//  font-size: 18px;
+//  line-height: 26px;
+//  max-width: 320px;
+//  margin: 0 auto;
+//  padding: 0;
+//  text-transform: uppercase;
+//  color: black;
+//  background-color: @white-three;
+//  @font-reg();
+//}
 
 .conteiner {
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
