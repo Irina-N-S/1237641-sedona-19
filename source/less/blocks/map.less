@@ -1,0 +1,38 @@
+.map {
+  position: relative;
+}
+
+.map__marker::after {
+  content: "";
+  background-color: @blue;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border: 5px solid @white;
+  border-radius: 50%;
+  top: 45%;
+  left: 46%;
+}
+
+.map__img,
+.map__iframe {
+  width: 100%;
+}
+
+.map__iframe {
+  position: absolute;
+  height: 350px;
+}
+
+@media (min-width: @tablet-width) {
+  .map__marker {
+    top: 163px;
+    left: 371px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    margin-bottom: -18px;
+  }
+}

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <!--suppress HtmlUnknownTarget -->
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
   </head>
   <body>
   <div style="display: none">
@@ -123,7 +124,7 @@
               <p class="lives__head">
                 ЕДА
               </p>
-              <p class="lives__description">
+              <p class="lives__description lives__description--width">
                 Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
               </p>
             </div>
@@ -200,6 +201,7 @@
           </a>
         </div>
         <div class="map">
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653299.89889834!2d-110.04173814403525!3d35.96894718307984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1589983244440!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/bg-map-desktop@1x.webp, img/webp/bg-map-desktop@2x.webp">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/bg-map-tablet@1x.webp, img/webp/bg-map-tablet@2x.webp">
@@ -209,7 +211,8 @@
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg">
             <img class="map__img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg" height="350" width="320" alt="Карта">
           </picture>
-          <img class="map__marker" src="img/map-marker-svg.png" width="27" height="27" alt="Маркер">
+<!--          <img class="map__marker" src="img/map-marker-svg.png" width="27" height="27" alt="Маркер">-->
+          <span class="map__marker"></span>
         </div>
       </main>
       <footer class="footer">
@@ -243,7 +246,7 @@
               <p class="footer__description">
                 Разработано
               </p>
-              <a class="footer__link-academy">
+              <a class="footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
                 <svg class="footer__img-academy" width="26.943" height="34.09">
                   <use xlink:href="img/sprite.svg#icon-htmlacademy-svg"></use>
                 </svg>

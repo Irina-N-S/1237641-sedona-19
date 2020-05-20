@@ -4,7 +4,6 @@
 }
 
 .lives__head {
-  //font-weight: bold;
   font-family: @fontBold;
   margin-top: 8px;
   margin-bottom: 0;
@@ -21,13 +20,17 @@
   margin-top: 6px;
   display: flex;
   align-items: flex-start;
+  width: 33.3333%;
 }
 
 .lives__icon {
   width: 38px;
   height: 37px;
   fill: @blue;
-  margin-right: 11px;
+}
+
+.lives__text {
+  padding-left: 12px;
 }
 
 @media (min-width: @tablet-width) {
@@ -35,14 +38,13 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 70px;
-    padding-left: 51px;
-    padding-right: 46px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 46px;
   }
 
   .lives__item {
     flex-direction: column;
-    margin-left: 91px;
     align-items: center;
   }
 
@@ -57,6 +59,7 @@
 
   .lives__text {
     margin-top: 37px;
+    padding-left: 0;
   }
 
   .lives__description {
@@ -68,20 +71,19 @@
   .lives__item-souvenir {
     order: 1;
   }
-
-  .lives .lives__item:nth-child(1) {
-    margin-left: 0;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .lives {
     justify-content: space-around;
-    padding-left: 47px;
     padding-bottom: 68px;
   }
 
   .lives__description {
     width: 252px;
+  }
+
+  .lives__description--width {
+    width: 285px;
   }
 }

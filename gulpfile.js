@@ -106,7 +106,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("process-css"));
+  gulp.watch("source/less/blocks/**/*.less", gulp.series("process-css"));
   gulp.watch("source/js/**/*.js", gulp.series("optimize-js"));
   gulp.watch("source/img/icon-*.svg", gulp.series("create-sprite", "optimize-html", "refresh"));
   gulp.watch("source/*.html", gulp.series("optimize-html", "refresh"));
