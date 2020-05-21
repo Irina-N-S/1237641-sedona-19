@@ -5,21 +5,22 @@
   var text = document.querySelector(".photo__description");
   var review = document.querySelector(".review");
 
-  down.classList.add("welcome-picture--down");
+  down && down.classList.add("welcome-picture--down");
   text && text.classList.add("photo__description--down");
   review && review.classList.add("review--down");
 
   buttonMenu.addEventListener("click", function (evt) {
     evt.preventDefault();
-    down.classList.remove("welcome-picture--down");
+    down && down.classList.remove("welcome-picture--down");
     text && text.classList.remove("photo__description--down");
-    review.classList.remove("review--down");
+    review && review.classList.remove("review--down");
   })
 
   closeButton.addEventListener("click", function (evt) {
     evt.preventDefault();
-    down.classList.add("welcome-picture--down");
+    down && down.classList.add("welcome-picture--down");
     text && text.classList.add("photo__description--down");
     review && review.classList.add("review--down");
   })
 })();
+
