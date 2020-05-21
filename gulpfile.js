@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var uglify = require("gulp-uglify");
+var save = require('gulp-save');
 
 gulp.task("optimize-images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -61,9 +62,13 @@ gulp.task("process-css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(save('full-css', {}))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(save.restore('full-css'))
+    .pipe(rename("style.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
