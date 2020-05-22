@@ -1,8 +1,9 @@
 (function () {
   var down = document.querySelector(".welcome-picture");
-  var closeButton = document.querySelector('.navigation__button');
+  var closeButton = document.querySelector(".navigation__button");
   var buttonMenu = document.querySelector(".logo__menu");
   var text = document.querySelector(".photo__description");
+
   var review = document.querySelector(".review");
 
   down && down.classList.add("welcome-picture--down");
@@ -23,4 +24,3 @@
     review && review.classList.add("review--down");
   })
 })();
-

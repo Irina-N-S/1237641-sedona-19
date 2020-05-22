@@ -13,6 +13,7 @@
 }
 
 .logo__menu {
+  display: none;
   background-color: @white;
   border: none;
   width: 23px;
@@ -69,5 +70,11 @@
     height: 96px;
     width: 188px;
     left: 42.1%;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .logo__menu--show {
+    display: inline;
   }
 }

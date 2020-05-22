@@ -3,6 +3,9 @@
   var nav = document.querySelector(".navigation");
   var closeButton = document.querySelector('.navigation__button');
 
+  buttonMenu && buttonMenu.classList.add("logo__menu--show");
+  closeButton && closeButton.classList.add("navigation__button--show");
+
   var closeMenu = function () {
     nav.classList.add("navigation--closed");
   };

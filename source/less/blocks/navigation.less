@@ -88,6 +88,7 @@
   }
 
   .navigation__button {
+    display: none;
     border: 0;
     cursor: pointer;
     padding: 0;
@@ -167,5 +168,25 @@
 @media (max-width: @mobile-width-only) {
   .navigation--closed {
     display: none;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .navigation__item .navigation__button--show {
+    display: inline;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .navigation__item .navigation__link--activ {
+    color: @visit-activ;
+
+    &:hover {
+      color: @visit-hover;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
   }
 }
